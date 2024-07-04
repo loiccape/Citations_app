@@ -3,12 +3,14 @@ import { CitationModel } from '../models/CitationModel';
 
 interface CitationContextType {
   citations: CitationModel[],
-  addNewCitation: (newCitation: CitationModel) => void // Update to accept a new citation
+  addNewCitation: (newCitation: CitationModel) => void,
+  applyFilters: (sort: string, search: string) => void
 }
 
 const CitationContext = createContext<CitationContextType>({
   citations: [],
-  addNewCitation: (newCitation: CitationModel) => {} // Provide a default empty function
+  addNewCitation: (newCitation: CitationModel) => {},
+  applyFilters: (sort:string , search: string) => {}
 });
 
 export default CitationContext;
