@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "citation": "Je reviendrai.",
+        "personne": "Terminator (Arnold Schwarzenegger)",
+        "date": "1984-10-26",
+        "likes": 12000,
+        "dislikes": 250
+    },
+    {
+        "id": 2,
+        "citation": "Que la Force soit avec toi.",
+        "personne": "Han Solo (Harrison Ford)",
+        "date": "1977-05-25",
+        "likes": 25000,
+        "dislikes": 300
+    },
+    {
+        "id": 3,
+        "citation": "Voici te regardant, gamin.",
+        "personne": "Rick Blaine (Humphrey Bogart)",
+        "date": "1942-11-26",
+        "likes": 15000,
+        "dislikes": 100
+    },
+    {
+        "id": 4,
+        "citation": "C'est à moi que tu parles?",
+        "personne": "Travis Bickle (Robert De Niro)",
+        "date": "1976-02-08",
+        "likes": 18000,
+        "dislikes": 150
+    },
+    {
+        "id": 5,
+        "citation": "Je vois des gens qui sont morts.",
+        "personne": "Cole Sear (Haley Joel Osment)",
+        "date": "1999-08-06",
+        "likes": 22000,
+        "dislikes": 200
+    },
+    {
+        "id": 6,
+        "citation": "Hasta la vista, baby.",
+        "personne": "Terminator (Arnold Schwarzenegger)",
+        "date": "1991-07-03",
+        "likes": 17000,
+        "dislikes": 250
+    },
+    {
+        "id": 7,
+        "citation": "E.T. téléphone maison.",
+        "personne": "E.T. (Pat Welsh)",
+        "date": "1982-06-11",
+        "likes": 20000,
+        "dislikes": 100
+    },
+    {
+        "id": 8,
+        "citation": "Vous ne pouvez pas supporter la vérité!",
+        "personne": "Col. Nathan R. Jessup (Jack Nicholson)",
+        "date": "1992-12-11",
+        "likes": 14000,
+        "dislikes": 300
+    },
+    {
+        "id": 9,
+        "citation": "Je suis le roi du monde!",
+        "personne": "Jack Dawson (Leonardo DiCaprio)",
+        "date": "1997-12-19",
+        "likes": 23000,
+        "dislikes": 150
+    },
+    {
+        "id": 10,
+        "citation": "Vers l'infini et au-delà!",
+        "personne": "Buzz l'Éclair (Tim Allen)",
+        "date": "1995-11-22",
+        "likes": 24000,
+        "dislikes": 100
+    }
+]
