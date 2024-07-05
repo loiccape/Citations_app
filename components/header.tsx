@@ -52,10 +52,9 @@ export default function Header() {
                     value={searchTerm}
                     onChange={handleSearchChange}
                 />
-                <div>
+                
                     <Button variant={"outline"} onClick={handleAddCitationClick}>Ajouter une citation</Button>
-                    <Button variant={"outline"} className='ms-3'>Connection</Button>
-                </div>
+                
             </div>
             {showMenu && (
                 <MyForm />
