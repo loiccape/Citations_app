@@ -68,7 +68,7 @@ export default function MyForm() {
             title:"Citation Crée",
             description: newCitation.citation
         })
-        form.reset({personne:"",citation:"",date:""})
+        form.reset({personne:"",citation:""})
     }
 
     return (
