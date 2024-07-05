@@ -28,6 +28,8 @@ import { CalendarIcon } from 'lucide-react'
 
 import { CitationModel } from '@/app/models/CitationModel'
 import CitationsContext from '@/app/contexts/CitationsContext'
+import { useToast } from './ui/use-toast'
+
 
 const formSchema = z.object({
     personne: z.string().min(2, { message: "Minimum 2 caractères" }).max(50, { message: "Maximum 50 caractères" }),
@@ -38,6 +40,7 @@ const formSchema = z.object({
 
 export default function MyForm() {
 
+    const {toast} = useToast()
     const [date, setDate] = React.useState<Date | undefined>(new Date())
 
     const form = useForm<z.infer<typeof formSchema>>({
@@ -50,6 +53,7 @@ export default function MyForm() {
     })
 
     const {addNewCitation} = useContext(CitationsContext)
+
     function onSubmit(values: z.infer<typeof formSchema>) {
         const newCitation: CitationModel = {
             id: 0,
@@ -60,6 +64,11 @@ export default function MyForm() {
             dislikes: 0,
         }
         addNewCitation(newCitation)
+        toast({
+            title:"Citation Crée",
+            description: newCitation.citation
+        })
+        form.reset({personne:"",citation:"",date:""})
     }
 
     return (

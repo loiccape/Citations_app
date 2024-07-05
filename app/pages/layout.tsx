@@ -5,6 +5,7 @@ import { Separator } from '@/components/ui/separator';
 import CitationsContext from '../contexts/CitationsContext';
 import { citationsData } from '../data/CitationData';
 import { CitationModel } from '../models/CitationModel';
+import { Toaster } from '@/components/ui/toaster';
 
 export default function MainLayout({
   children,
@@ -63,6 +64,7 @@ export default function MainLayout({
         <Header />
         <Separator className="my-4" />
         {children}
+        <Toaster/>
       </section>
     </CitationsContext.Provider>
   );
